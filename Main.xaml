@@ -95,7 +95,7 @@
         <OutArgument x:TypeArguments="x:String">[MyVar]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:String">["RPA"]</InArgument>
+        <InArgument x:TypeArguments="x:String">["Robotic Process Automation"]</InArgument>
       </Assign.Value>
     </Assign>
   </Sequence>

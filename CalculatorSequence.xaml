@@ -86,7 +86,7 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="755.6,1516" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="755.6,1690.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Diff" />
     </Sequence.Variables>
@@ -95,7 +95,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Calculator - Sequence" sap:VirtualizedContainerService.HintSize="483.2,1492.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="Calculator - Sequence" sap:VirtualizedContainerService.HintSize="483.2,1667.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -142,7 +142,10 @@
         </Assign>
         <ui:LogMessage DisplayName="Log Message - Sum" sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;The sum is: &quot; + Sum]" />
       </Sequence>
-      <Sequence DisplayName="Sequence - Difference" sap:VirtualizedContainerService.HintSize="449.6,432" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <Sequence DisplayName="Sequence - Difference" sap:VirtualizedContainerService.HintSize="449.6,606.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:String" Name="NewVar1" />
+        </Sequence.Variables>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -157,7 +160,15 @@
             <InArgument x:TypeArguments="x:String">[(numOne - numTwo).ToString]</InArgument>
           </Assign.Value>
         </Assign>
-        <ui:LogMessage DisplayName="Log Message - Sum" sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;The Diff is: &quot; + Diff]" />
+        <ui:LogMessage DisplayName="Log Message - Sum" sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;The Diff is: &quot; + Diff]" />
+        <Assign sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">[NewVar1]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">["Saumya"]</InArgument>
+          </Assign.Value>
+        </Assign>
       </Sequence>
       <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="449.6,113.6" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Commit Test&quot;]" />
     </Sequence>
